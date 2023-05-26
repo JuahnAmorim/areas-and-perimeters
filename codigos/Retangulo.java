@@ -1,3 +1,4 @@
+package codigos;
 public class Retangulo extends Quadrilatero{
     public float lado;
     public float altura;
