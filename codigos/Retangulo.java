@@ -1,9 +1,16 @@
 package codigos;
 public class Retangulo extends Quadrilatero{
+    
     public float lado;
     public float altura;
     
     public Retangulo(float lado, float altura){
+        if(lado <= 0 || altura <= 0){
+            throw new RuntimeException("O valor do lado e da altura do "
+                                          + "retangulo precisa ser maior"
+                                          + " ou igual a 0.");
+        }
+        
         this.lado = lado;
         this.altura = altura;
     }

@@ -1,8 +1,15 @@
 package codigos;
 public class Quadrado extends Retangulo{    
+    
     public Quadrado(float lado, float altura) {
         super(lado, altura);
-        this.altura = this.lado;
+        if(lado <= 0 || altura <= 0){
+            throw new RuntimeException("O valor do lado e da altura "
+                    + "do quadrado precisa ser maior ou igual a 0.");
+        }else if(lado != altura){
+            throw new RuntimeException("No quadrado, lado e altura "
+                                       + "precisam ter valores iguais.");
+        }
     }
     
     @Override
@@ -31,4 +38,3 @@ public class Quadrado extends Retangulo{
                "\nPerimetro: " + this.calcularPerimetro() + "\n");
     }
 }
-

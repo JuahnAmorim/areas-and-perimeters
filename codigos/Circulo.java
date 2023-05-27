@@ -1,7 +1,12 @@
 package codigos;
 public class Circulo extends Quadrilatero {
+    
     public float raio;
     public Circulo(float raio){
+        if(raio <= 0){
+            throw new RuntimeException("No circulo, o valor do raio não "
+                                       + "pode ser menor ou igual a 0.");
+        }
         this.raio = raio;
     }
     
