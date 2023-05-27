@@ -15,6 +15,8 @@ public class Execute {
             quadrilateros.add(r1);
             quadrilateros.add(r2);
             quadrilateros.add(q1);
+            quadrilateros.add(c1);
+            quadrilateros.add(c2);
             circulos.add(c1);
             circulos.add(c2);
         }
